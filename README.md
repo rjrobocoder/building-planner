@@ -1,7 +1,5 @@
-Great! Based on the provided repository URL, here's an updated README specifically for your project:
 
 ---
-
 # Building Planner
 
 Building Planner is a ReactJS project designed for creating building plans by drawing shapes such as rectangles, lines, and using tools like selection. This application provides a user-friendly interface for architects and designers to visualize and plan buildings efficiently.
@@ -14,6 +12,7 @@ Building Planner is a ReactJS project designed for creating building plans by dr
 - [Usage](#usage)
 - [Features](#features)
 - [Contributing](#contributing)
+- [Testing](#testing)
 - [License](#license)
 
 ## Getting Started
@@ -70,6 +69,32 @@ If you would like to contribute to the project, follow these steps:
 3. Make changes and submit a pull request.
 
 Please adhere to the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md).
+
+## Testing
+
+### End-to-End (E2E) Tests Case
+
+I have included Cypress E2E tests case to ensure the functionality of the Drawing Shapes and Tools. To run the tests, follow these steps:
+
+1. Make sure the development server is running:
+
+   ```bash
+   npm start
+   ```
+
+2. Open a new terminal and run the Cypress tests:
+
+   Navigate to the project directory:
+
+   ```bash
+   cd building-planner/frontend
+   ```
+
+   ```bash
+   npx cypress open
+   ```
+
+   This will open the Cypress Test Runner. From there, you can select and run the `draw.cy.js` test file to execute the E2E tests.
 
 ## License
 
