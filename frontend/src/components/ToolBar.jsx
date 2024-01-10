@@ -22,10 +22,10 @@ const ToolBar = ({ tool, elementType, setTool, setElementType }) => {
           {tools?.map((item) => (
             <label
               key={item.value}
-              className={`relative flex items-center justify-center h-10 w-10 bg-${
+              className={`relative flex items-center justify-center h-10 w-10 ${
                 elementType === item.value || tool === item.value
-                  ? "[#b7e4c7]"
-                  : "[#ebf5ef]"
+                  ? "bg-[#b7e4c7]"
+                  : "bg-[#ebf5ef]"
               } hover:bg-[#b7e4c7] rounded-lg cursor-pointer`}
               title={item.value}
             >
